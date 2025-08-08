@@ -1,12 +1,126 @@
-# React + Vite
+````md
+# ✅ Leave Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 **Live Demo**: [https://ncg-leave-management-system.vercel.app](https://ncg-leave-management-system.vercel.app)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Project Overview
 
-## Expanding the ESLint configuration
+The Leave Management System is a responsive web application built with **React.js**, **Redux Toolkit**, **React Router**, **shadcn/ui**, and **TailwindCSS**. It provides role-based dashboards and functionalities for Employees, Managers, and Admins to apply for, view, and manage leave requests.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To enhance user experience, a **timer function (1 sec delay)** is used to simulate API calls. This makes the UI feel realistic and allows time to show a loading spinner while data is "fetching."
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/leave-management-system.git
+cd leave-management-system
+npm install
+````
+
+### Run Locally
+
+```bash
+npm run dev
+```
+
+Visit `http://localhost:5173` in your browser.
+
+---
+
+## 🧠 Features Implemented
+
+### 🔐 Authentication
+
+* Role-based login system with dummy credentials.
+
+### 👤 Employee
+
+* Apply for leave.
+* View leave history.
+
+### 🧑‍💼 Manager
+
+* View requests from employees.
+* Approve/Reject leave requests.
+
+
+### 🖥️ UI/UX
+
+* Responsive design using **TailwindCSS** and **shadcn/ui** components.
+* Loading spinners for async simulation (1 second delay using `setTimeout`).
+* Cards, badges, selects, and other shadcn components integrated.
+
+---
+
+## 🗂️ Project Structure
+
+```
+src/
+├── components/            # Shared components (Header, Card, etc.)
+│   ├── common/            # Header & reusable layout components
+│   └── ui/                # Custom UI components using shadcn/ui
+│
+├── views/                 # Reusable views like LeaveRequestForm, History, etc.
+├── pages/                 # Route-level components (Login, ApplyLeave, Dashboard)
+├── store/                 # Redux Toolkit setup
+│   ├── slices/            # authSlice, userSlice, leaveSlice
+│   └── index.js           # Redux store configuration
+│
+├── utils/                 # Helper functions, constants, validation logic
+├── data/                  # Dummy data (users, leaves)
+├── hooks/                 # Custom React hooks
+├── App.jsx                # Main application file
+├── main.jsx               # Entry point
+```
+
+---
+
+## 🔧 State Management
+
+* **Redux Toolkit** is used to manage global state.
+* `authSlice` → handles login state & current user.
+* `userSlice` → holds static user data.
+* `leaveSlice` → handles leave form submission, status updates, and history.
+* Simulated API behavior using `setTimeout` for async-like experience.
+
+---
+
+## ⚠️ Assumptions & Limitations
+
+* Currently, no real backend/API integration.
+* User login is based on hardcoded data.
+* The 1-second timer simulates a real API call but is not production behavior.
+* Role switching and email matching are mocked for demo purposes.
+
+---
+
+## 🧪 Future Improvements
+
+* Add real backend integration (Node.js + MongoDB/PostgreSQL).
+* Role-based protected routes.
+* Notification system for status updates.
+* Pagination and filtering for large datasets.
+* Unit and integration tests using Jest/RTL.
+
+---
+
+## 🧑‍💻 Built With
+
+* [React](https://reactjs.org/)
+* [Redux Toolkit](https://redux-toolkit.js.org/)
+* [React Router](https://reactrouter.com/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [shadcn/ui](https://ui.shadcn.com/)
+
+
