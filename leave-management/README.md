@@ -35,7 +35,7 @@ To simulate API calls and improve user experience, a **1-second delay timer** is
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/leave-management-system.git
+git clone https://github.com/pavan-pani/NCG-leave-management-system.git
 cd leave-management-system
 npm install
 ```
