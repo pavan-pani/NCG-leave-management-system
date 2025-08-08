@@ -1,4 +1,3 @@
-````md
 # ✅ Leave Management System
 
 🔗 **Live Demo**: [https://ncg-leave-management-system.vercel.app](https://ncg-leave-management-system.vercel.app)
@@ -7,9 +6,9 @@
 
 ## 📦 Project Overview
 
-The Leave Management System is a responsive web application built with **React.js**, **Redux Toolkit**, **React Router**, **shadcn/ui**, and **TailwindCSS**. It provides role-based dashboards and functionalities for Employees, Managers, and Admins to apply for, view, and manage leave requests.
+The **Leave Management System** is a responsive web application built using **React.js**, **Redux Toolkit**, **React Router**, **shadcn/ui**, and **TailwindCSS**. It features role-based dashboards and functionalities for Employees, Managers, and Admins to apply for, view, and manage leave requests.
 
-To enhance user experience, a **timer function (1 sec delay)** is used to simulate API calls. This makes the UI feel realistic and allows time to show a loading spinner while data is "fetching."
+To simulate API calls and improve user experience, a **1-second delay timer** is implemented. This helps demonstrate a loading spinner during data fetching.
 
 ---
 
@@ -22,11 +21,11 @@ To enhance user experience, a **timer function (1 sec delay)** is used to simula
 - **Best Practices**: 96  
 - **SEO**: 100  
 
-> This app is optimized for fast performance and a great user experience across devices.
+> Optimized for fast performance and seamless user experience across devices.
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Getting Started
 
 ### Prerequisites
 
@@ -39,7 +38,7 @@ To enhance user experience, a **timer function (1 sec delay)** is used to simula
 git clone https://github.com/your-username/leave-management-system.git
 cd leave-management-system
 npm install
-````
+```
 
 ### Run Locally
 
@@ -51,28 +50,28 @@ Visit `http://localhost:5173` in your browser.
 
 ---
 
-## 🧠 Features Implemented
+## 🧠 Features
 
 ### 🔐 Authentication
 
-* Role-based login system with dummy credentials.
+- Role-based login system using dummy credentials
 
 ### 👤 Employee
 
-* Apply for leave.
-* View leave history.
+- Apply for leave
+- View leave history
 
 ### 🧑‍💼 Manager
 
-* View requests from employees.
-* Approve/Reject leave requests.
-
+- View leave requests from employees
+- Approve or reject leave requests
 
 ### 🖥️ UI/UX
 
-* Responsive design using **TailwindCSS** and **shadcn/ui** components.
-* Loading spinners for async simulation (1 second delay using `setTimeout`).
-* Cards, badges, selects, and other shadcn components integrated.
+- Fully responsive design using **TailwindCSS**
+- Styled components powered by **shadcn/ui**
+- Simulated loading indicators (using `setTimeout`)
+- Clean layout with reusable cards, badges, selects, and headers
 
 ---
 
@@ -80,60 +79,58 @@ Visit `http://localhost:5173` in your browser.
 
 ```
 src/
-├── components/            # Shared components (Header, Card, etc.)
-│   ├── common/            # Header & reusable layout components
-│   └── ui/                # Custom UI components using shadcn/ui
+├── components/            # Reusable UI and layout components
+│   ├── common/            # Header and layout wrappers
+│   └── ui/                # shadcn-based custom components
 │
-├── views/                 # Reusable views like LeaveRequestForm, History, etc.
+├── views/                 # Shared views (LeaveRequestForm, History, etc.)
 ├── pages/                 # Route-level components (Login, ApplyLeave, Dashboard)
-├── store/                 # Redux Toolkit setup
+├── store/                 # Redux Toolkit logic
 │   ├── slices/            # authSlice, userSlice, leaveSlice
-│   └── index.js           # Redux store configuration
+│   └── index.js           # Store configuration
 │
 ├── utils/                 # Helper functions, constants, validation logic
 ├── data/                  # Dummy data (users, leaves)
 ├── hooks/                 # Custom React hooks
-├── App.jsx                # Main application file
+├── App.jsx                # Root application component
 ├── main.jsx               # Entry point
 ```
 
 ---
 
-## 🔧 State Management
+## ⚙️ State Management
 
-* **Redux Toolkit** is used to manage global state.
-* `authSlice` → handles login state & current user.
-* `userSlice` → holds static user data.
-* `leaveSlice` → handles leave form submission, status updates, and history.
-* Simulated API behavior using `setTimeout` for async-like experience.
+- State is managed using **Redux Toolkit**
+- `authSlice`: Manages login and user state
+- `userSlice`: Stores static user data
+- `leaveSlice`: Handles leave request form, approvals, and history
+- Simulated async behavior using `setTimeout` for a realistic feel
 
 ---
 
 ## ⚠️ Assumptions & Limitations
 
-* Currently, no real backend/API integration.
-* User login is based on hardcoded data.
-* The 1-second timer simulates a real API call but is not production behavior.
-* Role switching and email matching are mocked for demo purposes.
+- No real backend/API integration (only mock data)
+- Login is based on hardcoded dummy users
+- Timer-based delay is only for simulation, not actual backend latency
+- Role-based access is simulated based on selected credentials
 
 ---
 
-## 🧪 Future Improvements
+## 🔮 Future Improvements
 
-* Add real backend integration (Node.js + MongoDB/PostgreSQL).
-* Role-based protected routes.
-* Notification system for status updates.
-* Pagination and filtering for large datasets.
-* Unit and integration tests using Jest/RTL.
+- Integrate with a real backend (e.g., Node.js + MongoDB or PostgreSQL)
+- Add protected routes based on roles
+- Real-time notifications for leave status updates
+- Filtering, searching, and pagination for large datasets
+- Unit and integration testing with Jest and React Testing Library
 
 ---
 
 ## 🧑‍💻 Built With
 
-* [React](https://reactjs.org/)
-* [Redux Toolkit](https://redux-toolkit.js.org/)
-* [React Router](https://reactrouter.com/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [shadcn/ui](https://ui.shadcn.com/)
-
-
+- [React.js](https://reactjs.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [React Router](https://reactrouter.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
