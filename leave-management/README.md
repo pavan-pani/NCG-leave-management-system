@@ -15,7 +15,7 @@ To enhance user experience, a **timer function (1 sec delay)** is used to simula
 
 ## 🚀 Lighthouse Performance Report
 
-<img src="/lighthouse-report.png" alt="Lighthouse Report" width="700" />
+<img src="./screenshots/lighthouse-report.png" alt="Lighthouse Report" width="700" />
 
 - **Performance**: 100  
 - **Accessibility**: 93  
