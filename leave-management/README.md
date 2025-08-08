@@ -17,12 +17,14 @@ To enhance user experience, a **timer function (1 sec delay)** is used to simula
 
 <img src="/lighthouse-report.png" alt="Lighthouse Report" width="700" />
 
-- **Performance**: 100
-- **Accessibility**: 93
-- **Best Practices**: 96
-- **SEO**: 100
+- **Performance**: 100  
+- **Accessibility**: 93  
+- **Best Practices**: 96  
+- **SEO**: 100  
 
-This app is optimized for fast performance and a great user experience across devices.
+> This app is optimized for fast performance and a great user experience across devices.
+
+---
 
 ## 🚀 Getting Started
 
